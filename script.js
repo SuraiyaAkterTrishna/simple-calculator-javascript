@@ -5,3 +5,8 @@ for (const digit of digits) {
         display.value += e.target.value;
     })
 }
+const allClear = document.getElementById('ac');
+allClear.addEventListener('click',function(){
+    let display = document.getElementById('display');
+        display.value = '';
+})
