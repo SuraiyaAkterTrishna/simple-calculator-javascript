@@ -15,3 +15,8 @@ deleteBtn.addEventListener('click',function(){
     let display = document.getElementById('display');
         display.value = display.value.toString().slice(0,-1);
 })
+const result = document.getElementById('result');
+result.addEventListener('click',function(){
+    let display = document.getElementById('display');
+    display.value = eval(display.value);
+})
