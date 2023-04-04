@@ -10,3 +10,8 @@ allClear.addEventListener('click',function(){
     let display = document.getElementById('display');
         display.value = '';
 })
+const deleteBtn = document.getElementById('delete');
+deleteBtn.addEventListener('click',function(){
+    let display = document.getElementById('display');
+        display.value = display.value.toString().slice(0,-1);
+})
